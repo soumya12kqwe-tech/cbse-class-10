@@ -14,7 +14,7 @@ with col1:
 
 with col2:
     st.metric(label="Weightage", value="7 Marks", delta="High Priority")
-    st.warning("⚠️ Practice Van't Hoff Numericals!")import streamlit as st
+    st.warning("⚠️ Practice Van't Hoff Numericals!")
 from gtts import gTTS
 from io import BytesIO
 
