@@ -1,4 +1,20 @@
 import streamlit as st
+
+# Use columns to separate "Theory" from "Visuals"
+col1, col2 = st.columns([2, 1]) 
+
+with col1:
+    st.header("Chapter 1: Solutions")
+    tabs = st.tabs(["📖 Notes", "🎥 Diagrams", "📝 PYQs"])
+    with tabs[0]:
+        st.write("Raoult's Law: The partial vapor pressure...")
+    with tabs[1]:
+        # 
+        st.image("https://example.com/raoults_law.png", caption="Vapor Pressure Curve")
+
+with col2:
+    st.metric(label="Weightage", value="7 Marks", delta="High Priority")
+    st.warning("⚠️ Practice Van't Hoff Numericals!")import streamlit as st
 from gtts import gTTS
 from io import BytesIO
 
